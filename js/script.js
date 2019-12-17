@@ -19,7 +19,7 @@ var currentYear = 2019;
 console.log(currentYear);
 var userAge = currentYear - userYear;
 console.log(userAge);
-document.getElementById('user_age').innerHTML = '"' + userAge + '" years old.';
+document.getElementById('user_age').innerHTML = '"' + userAge + ' years old".';
 
 // ask favorite color
 var userColor = prompt("What's your favorite color?");
@@ -29,4 +29,4 @@ document.getElementById('user_color').innerHTML = '"' + userColor + '".';
 // print super secret password
 var userPassword = userName + userSurname + userYear + userAge + userColor;
 console.log(userPassword);
-document.getElementById('user_password').innerHTML = userPassword;
+document.getElementById('user_password').innerHTML = '"' + userPassword + '"';

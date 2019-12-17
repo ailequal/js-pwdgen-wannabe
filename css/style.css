@@ -1,3 +1,4 @@
+/* general */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -5,9 +6,87 @@
 }
 
 body {
+  min-width: 1024px;
+  min-height: 576px;
+  background-color: darkmagenta;
   font-size: 16px;
+  color: white;
+}
+
+/* header */
+.title {
+  margin-top: 10px;
+  background-image: linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red);
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+/* main */
+.main .container {
+  width: 80%;
+  margin: 20px auto 0 auto;
+}
+
+.main .container > div:first-child {
+  display: inline-block;
+  background-color: orange;
+}
+
+.user_password {
+  text-align: center;
+}
+
+.user_password h2 {
+  display: inline-block;
+  margin: 20px auto;
+  padding: 30px;
+  background-color: tomato;
+}
+
+.user_password h2:hover {
+  transform: rotate(360deg);
+  transition: transform 1s;
 }
 
 #user_password {
+  display: block;
+  margin-top: 20px;
+  animation-name: blink;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
   text-transform: lowercase;
+}
+
+@keyframes blink {
+  0% {
+    transform: scale(1);
+    color: white;
+  }
+  50% {
+    transform: scale(1.2);
+    color: red;
+  }
+  100% {
+    transform: scale(1);
+    color: white;
+  }
+}
+
+/* footer */
+.footer .container {
+  width: 80%;
+  margin: auto;
+  text-align: right;
+}
+
+.footer .container h6 {
+  display: inline-block;
+  background-color: darkcyan;
+}
+
+.footer .container h6:hover {
+  transform: scale(1.5);
+  transition: transform 5s;
 }
