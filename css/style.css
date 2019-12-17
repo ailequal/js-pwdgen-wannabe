@@ -7,3 +7,7 @@
 body {
   font-size: 16px;
 }
+
+#user_password {
+  text-transform: lowercase;
+}
